@@ -9,6 +9,7 @@ const ToDoForm = ({dispatch}) => {
 
   const submitForm = e => {
     e.preventDefault()
+    setItems('')
     dispatch ({
       type: 'ADD_TODO',
       payload: [items]
